@@ -11,7 +11,9 @@ const QuoteSection = () => {
           <div className="text-4xl text-minecraft-red/40 mb-6">"</div>
           <p className="text-2xl md:text-3xl font-light italic text-minecraft-text/90 mb-8">
             In the realm of MythicScales, legends are forged through battle.
-            Join the Crystal PvP arena or defend your bed in Bedwars to claim your glory.
+            <span id="survival" className="block mt-2">Join our Survival world to build your empire.</span>
+            <span id="cpvp" className="block mt-2">Join the Crystal PvP arena to claim your glory.</span>
+            <span id="bedwars" className="block mt-2">Or defend your bed in Bedwars to become a champion.</span>
           </p>
           <div className="text-minecraft-red">— The MythicScales Chronicles</div>
         </div>
