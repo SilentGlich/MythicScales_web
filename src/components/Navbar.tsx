@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, ChevronDown, Users, Gamepad } from 'lucide-react';
+import { Menu, ChevronDown, Users, Gamepad, Ticket } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
@@ -25,9 +25,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-minecraft-black/90 backdrop-blur-md py-4' : 'bg-transparent py-6'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/90 backdrop-blur-md py-4' : 'bg-transparent py-6'}`}>
       <div className="container mx-auto flex items-center justify-between">
-        <a href="/" className="font-bold text-xl md:text-2xl gradient-text">CraftRealm</a>
+        <a href="/" className="font-bold text-xl md:text-2xl gradient-text">MythicScales</a>
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
@@ -38,15 +38,15 @@ const Navbar = () => {
             </button>
             <div className="absolute top-full left-0 mt-2 w-48 bg-minecraft-nearBlack/95 backdrop-blur-sm rounded-md shadow-lg overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-minecraft-red/20">
               <a href="#survival" className="block px-4 py-2 hover:bg-minecraft-red/10">Survival</a>
-              <a href="#creative" className="block px-4 py-2 hover:bg-minecraft-red/10">Creative</a>
-              <a href="#skyblock" className="block px-4 py-2 hover:bg-minecraft-red/10">Skyblock</a>
+              <a href="#cpvp" className="block px-4 py-2 hover:bg-minecraft-red/10">Crystal PvP</a>
+              <a href="#bedwars" className="block px-4 py-2 hover:bg-minecraft-red/10">Bedwars</a>
             </div>
           </div>
           <a href="#community" className="menu-item flex items-center">
             <Users size={16} className="mr-1" /> Community
           </a>
-          <a href="#events" className="menu-item flex items-center">
-            <Gamepad size={16} className="mr-1" /> Events
+          <a href="#support" className="menu-item flex items-center">
+            <Ticket size={16} className="mr-1" /> Support
           </a>
           <Button className="ml-4 bg-red-glow hover:opacity-90">Join Now</Button>
         </div>
@@ -71,15 +71,15 @@ const Navbar = () => {
             </button>
             <div className="pl-4 mt-2 border-l border-minecraft-red/20">
               <a href="#survival" className="block py-2 hover:text-minecraft-red">Survival</a>
-              <a href="#creative" className="block py-2 hover:text-minecraft-red">Creative</a>
-              <a href="#skyblock" className="block py-2 hover:text-minecraft-red">Skyblock</a>
+              <a href="#cpvp" className="block py-2 hover:text-minecraft-red">Crystal PvP</a>
+              <a href="#bedwars" className="block py-2 hover:text-minecraft-red">Bedwars</a>
             </div>
           </div>
           <a href="#community" className="menu-item py-2 flex items-center">
             <Users size={16} className="mr-1" /> Community
           </a>
-          <a href="#events" className="menu-item py-2 flex items-center">
-            <Gamepad size={16} className="mr-1" /> Events
+          <a href="#support" className="menu-item py-2 flex items-center">
+            <Ticket size={16} className="mr-1" /> Support
           </a>
           <Button className="mt-2 bg-red-glow hover:opacity-90 w-full">Join Now</Button>
         </div>

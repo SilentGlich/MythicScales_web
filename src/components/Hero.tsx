@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Server } from 'lucide-react';
+import { ArrowRight, Server, Ticket } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="gradient-text">CraftRealm</span>
+            <span className="gradient-text">MythicScales</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-minecraft-text/90 mb-10">
@@ -27,13 +27,13 @@ const Hero = () => {
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
             </Button>
             <Button variant="outline" className="px-8 py-6 text-lg border-minecraft-red/30 text-minecraft-text hover:bg-minecraft-red/10">
-              <Server className="mr-2" size={18} />
-              Server Info
+              <Ticket className="mr-2" size={18} />
+              Support Ticket
             </Button>
           </div>
 
           <div className="mt-12 py-4 px-6 bg-minecraft-nearBlack/50 backdrop-blur-sm rounded-md inline-block">
-            <span className="font-mono text-minecraft-red">SERVER IP:</span> <span className="font-bold">play.craftrealm.com</span>
+            <span className="font-mono text-minecraft-red">SERVER IP:</span> <span className="font-bold">play.mythicscales.com</span>
           </div>
         </div>
 
