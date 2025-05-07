@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Server } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -13,29 +13,34 @@ const Hero = () => {
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="gradient-text">Agonia</span>
+            <span className="gradient-text">CraftRealm</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-agonia-text/90 mb-10">
-            Enter the realm where shadows whisper and reality bends.
-            <br />A journey beyond the veil of perception.
+          <p className="text-xl md:text-2xl text-minecraft-text/90 mb-10">
+            Explore. Build. Survive.
+            <br />The ultimate Minecraft multiplayer experience.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <Button className="px-8 py-6 text-lg bg-purple-glow hover:opacity-90 group">
-              Discover the Story 
+            <Button className="px-8 py-6 text-lg bg-red-glow hover:opacity-90 group">
+              Join Server Now
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
             </Button>
-            <Button variant="outline" className="px-8 py-6 text-lg border-agonia-purple/30 text-agonia-text hover:bg-agonia-purple/10">
-              Learn More
+            <Button variant="outline" className="px-8 py-6 text-lg border-minecraft-red/30 text-minecraft-text hover:bg-minecraft-red/10">
+              <Server className="mr-2" size={18} />
+              Server Info
             </Button>
+          </div>
+
+          <div className="mt-12 py-4 px-6 bg-minecraft-nearBlack/50 backdrop-blur-sm rounded-md inline-block">
+            <span className="font-mono text-minecraft-red">SERVER IP:</span> <span className="font-bold">play.craftrealm.com</span>
           </div>
         </div>
 
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center">
-          <span className="text-sm text-agonia-text/60 mb-2">Scroll to explore</span>
-          <div className="w-[2px] h-8 bg-gradient-to-b from-agonia-purple to-transparent"></div>
+          <span className="text-sm text-minecraft-text/60 mb-2">Scroll to explore</span>
+          <div className="w-[2px] h-8 bg-gradient-to-b from-minecraft-red to-transparent"></div>
         </div>
       </div>
     </section>

@@ -11,7 +11,7 @@ import Footer from '@/components/Footer';
 const Index = () => {
   // Update the document title
   React.useEffect(() => {
-    document.title = 'Agonia - Enter the Realm';
+    document.title = 'CraftRealm - Minecraft Server';
   }, []);
 
   return (

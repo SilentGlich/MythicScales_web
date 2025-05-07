@@ -63,13 +63,14 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				agonia: {
-					purple: '#9b87f5',
-					darkPurple: '#6E59A5',
-					darkBg: '#0F0F13',
-					nearBlack: '#1A1F2C',
+				minecraft: {
+					red: '#ea384c',
+					darkRed: '#bb1f31',
+					black: '#111111',
+					darkBg: '#1A1A1A',
+					nearBlack: '#222222',
 					text: '#ffffff',
-					muted: '#8E9196',
+					muted: '#999999',
 				},
 			},
 			borderRadius: {
@@ -116,7 +117,7 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-				'purple-glow': 'linear-gradient(to right, #9b87f5, #6E59A5)',
+				'red-glow': 'linear-gradient(to right, #ea384c, #bb1f31)',
 			},
 		}
 	},
